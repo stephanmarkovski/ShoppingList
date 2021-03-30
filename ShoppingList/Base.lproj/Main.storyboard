@@ -37,8 +37,16 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="JYj-pF-7pn"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="JYj-pF-7pn">
+                            <connections>
+                                <action selector="whenButtonPressed:" destination="BYZ-38-t0r" id="i0W-EN-aZw"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="NUJ-zY-f9B" id="H8f-Fg-Qm2"/>
+                        <outlet property="textField" destination="acN-TV-yfw" id="y6D-RX-Qic"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
